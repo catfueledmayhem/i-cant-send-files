@@ -267,7 +267,7 @@ function skiptoline270()
 
     viewportCamera.CFrame = CFrame.new(Vector3.new(0, 2, 12), part.Position)
 end
---game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("tony youre an idiot")
+game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("remember to not skid")
 for i = 1, 2 do
     game:GetService("ReplicatedStorage")["01_server"]:FireServer("cmd", "-gh 17170019452,17170019452,17170019452,17170019452,17170019452,17170019452,17170019452,17170019452,17170019452,17170019452")
     wait(2)
