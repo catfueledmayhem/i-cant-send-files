@@ -278,7 +278,7 @@ local archandles = Instance.new("ArcHandles")
 --wait(1)
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/catfueledmayhem/RobloxNotificationLibrary/refs/heads/main/main.lua')))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/catfueledmayhem/ihateflingreanimate/refs/heads/main/bullshit.lua"))()
-skiptoline139()
+skiptoline270()
 --wait(5)
 hats = {}
 ogpositions = {}
