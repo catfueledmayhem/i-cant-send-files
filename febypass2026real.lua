@@ -16,6 +16,7 @@ G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
 G2L["1"]["Name"] = [[ransom]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false
 
 
 -- StarterGui.ransom.Frame
@@ -799,9 +800,8 @@ local script = G2L["5"];
 			task.wait(0.1)
 		end
 	end
-	local key = game:GetService("UserInputService")
-	key.InputBegan:Connect(function(input)
-		if input.KeyCode == Enum.KeyCode.R then
+	while true do
+		if math.random(1, 1000) == 670 and script.Parent.background.ImageTransparency == 1 and script.Parent.vignette.ImageTransparency == 1  then
 			script.Parent.attackface.Size = UDim2.new(0.146, 0,0.333, 0)
 			table.insert(_G.thetasks, task.spawn(staticbackground))
 			task.spawn(function()
@@ -903,10 +903,11 @@ local script = G2L["5"];
 				for _, v in _G.thetasks do
 					task.cancel(v)
 				end
+                _G.thetasks = {}
 			end)
 		end
 		task.wait(1)
-	end)
+	end
 	
 end;
 task.spawn(C_5);
